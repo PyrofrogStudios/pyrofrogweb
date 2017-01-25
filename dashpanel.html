@@ -149,7 +149,7 @@
         <a href="https://www.microsoft.com/en-au/download/details.aspx?id=40784" target="_blank">Visual C++ Redistributable Packages for Visual Studio 2013 x86</a><br>
         <br>
         Get the latest version of the server here:<br>
-        <a href="downloads/DashPanelServer_1.0.0.5.zip" class="buttonlink">DashPanelServer_1.0.0.5.zip</a>
+        <a href="downloads/DashPanelServer_1.1.0.1.zip" class="buttonlink">DashPanelServer_1.1.0.1.zip</a>
         <br><br><br>
     </p>
 
@@ -161,11 +161,14 @@
         <br>
         Ensure the server and your chosen port are not blocked by your firewall. The server will attempt to open the chosen port using UpnP however this is not possible on all routers. If your experience connection issues look for specific instructions for forwarding ports at <a href="http://portforward.com/" target="_blank">http://portforward.com/</a>.
         <br><br>
-        <b>Note:</b><br>
+        <b>Note:</b>
+        <br>
         Some games require extra steps to share data with DashPanelServer.<br><br>
-        <b>pCARS</b><br>
+        <b>pCARS</b>
+        <br>
         Launch pCARS then go to Options - Visuals - Hardware and set Use Shared Memory to Yes.
-        <br><br>
+        <br>
+        <br>
         <b>rFactor 1/2, Stock Car Extreme</b><br>
         For rFactor based games go to the folder where you have extracted DashPanelServer and you will find the plugins folder: e.g. C:\Games\DashPanelServer\Plugins
         <br><br>
@@ -183,6 +186,26 @@
         <br>Open \UserData\[playername]\[playername].plr with text editor.
         <br>Change line: Write Shared Memory="0" to line: Write Shared Memory="1".
         <br>
+        <br><b>Codemasters</b>
+        <br>Locate the file hardware_settings_config.xml located in the users Documents folder.
+        <br>Edit to send UDP data to the ip 127.0.0.1 with a port of 20777.
+        <br>
+        <br>For example Dirt Rally:
+        <br>\Documents\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml
+        <br>&lt;motion_platform /&gt;
+        <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;udp enabled="true" extradata="1" ip="127.0.0.1" port="20777" delay="1" /&gt;
+        <br>
+        <br><b>LFS</b>
+        <br>In the LFS install folder open cfg.txt and edit the OutGauge section to the following:
+        <br>OutGauge Mode 2
+        <br>OutGauge Delay 1
+        <br>OutGauge IP 127.0.0.1
+        <br>OutGauge Port 20777
+        <br>OutGauge ID 0
+        <br>
+        <br><b>BeamNG</b>
+        <br>Enable OutGauge support in Options -> Gameplay.
+        <br>Set IP to 127.0.0.1 and Port to 20777.
     </p>
     
     <h2 id="tech">Techinical Info</h2>
