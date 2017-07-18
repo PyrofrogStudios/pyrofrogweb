@@ -86,18 +86,15 @@
                 Note the supported widgets vary depending on data provided by each game.<br>
 <br>
                 Currently supported games (PC Only):<br>
-                - Assetto Corsa<br>
-                - Rfactor 1 & 2, Game Stock Car Extreme, Automobilista<br>
-                - GTR2, GT Legends, Race07, RaceRoom Racing Experience<br>
-                - Project CARS<br>
-                - iRacing (Development temporarily on hold. Currently available as free Alpha)<br>
-                <br>
-                (Beta Demo data readers)<br>
+                -Assetto Corsa<br>
+                -Rfactor 1 & 2, Game Stock Car Extreme, Automobilista<br>
+                -GTR2, GT Legends, Race07, RaceRoom Racing Experience<br>
+                -Project CARS<br>
+                -Codemasters F1 2012, F1 2013, F1 2014, F1 2015, F1 2016, Dirt Rally, Dirt 4<br>
                 -Live For Speed<br>
                 -BeamNG<br>
-                -Dirt 2, Dirt 3, Dirt Rally<br>
-                -F1 2010-16<br>
-                -Grid 2<br>
+                - iRacing (Development temporarily on hold. Currently available as free Alpha)<br>
+                <br>
 <br>
                 New dashboards, widgets, and data readers coming in the future.<br>
                 <br><br>
@@ -195,16 +192,20 @@
         <br>If the line does not exist add it in. It may disappear after running the game however the setting will remain.
         <br>
         <br><b>Codemasters</b>
+        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
         <br>Locate the file hardware_settings_config.xml located in the users Documents folder.
-        <br>Edit to send UDP data to the ip 127.0.0.1 with a port of 20777.
+        <br>Eg. \Documents\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml
+        <br>Edit to send UDP data to the ip 127.0.0.1 with a port matching the servers Proxy Port.
         <br>
-        <br>For example Dirt Rally:
-        <br>\Documents\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml
-        <br>&lt;motion_platform /&gt;
-        <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;udp enabled="true" extradata="1" ip="127.0.0.1" port="20777" delay="1" /&gt;
+        <br>Example Dirt Rally, Dirt 4, F1 2012, 2013, 2014:
+        <br>&lt;udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" /&gt;
+        <br>
+        <br>Example F1 2015, 2016:
+        <br>&lt;udp enabled="true" ip="127.0.0.1" port="20777" /&gt;
         <br>
         <br><b>LFS</b>
-        <br>In the LFS install folder open cfg.txt and edit the OutGauge section to the following:
+        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
+        <br>In the LFS install folder open cfg.txt and edit the OutGauge section to the following changing the port number as required:
         <br>OutGauge Mode 2
         <br>OutGauge Delay 1
         <br>OutGauge IP 127.0.0.1
@@ -212,8 +213,9 @@
         <br>OutGauge ID 0
         <br>
         <br><b>BeamNG</b>
+        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
         <br>Enable OutGauge support in Options -> Gameplay.
-        <br>Set IP to 127.0.0.1 and Port to 20777.
+        <br>Set IP to 127.0.0.1 and Port to match the Proxy Port.
     </p>
     
     <h2 id="tech">Techinical Info</h2>
@@ -237,7 +239,7 @@
 
     <h2>Disclaimer</h2>
     <p>
-        DashPanel is NOT official software of Image Space Incorporated™, iRacing™, Simbin™, Slightly Mad Studios™ or Kunos Simulazioni™. The names pCars, Project Cars, Assetto Corsa, AC, iRacing, rFactor, rFactor 2, Game Stock car, Automobilista, RaceRoom Racing Experience, GTR2, Race07, RaceRoom The Game 2, and GTR Evolution are used for identification purposes only. All trademarks and registered trademarks are the property of their respective owners.<br>
+        DashPanel is NOT official software of Codemasters™, Image Space Incorporated™, iRacing™, Simbin™, Slightly Mad Studios™ or Kunos Simulazioni™. The names pCars, Project Cars, Assetto Corsa, AC, iRacing, rFactor, rFactor 2, Game Stock car, Automobilista, RaceRoom Racing Experience, GTR2, Race07, RaceRoom The Game 2, and GTR Evolution are used for identification purposes only. All trademarks and registered trademarks are the property of their respective owners.<br>
         <br>
         THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </p>
