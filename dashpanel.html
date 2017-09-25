@@ -168,10 +168,11 @@
         <br><br>
         <b>Note:</b>
         <br>
-        Some games require extra steps to share data with DashPanelServer.<br><br>
-        <b>pCARS</b>
-        <br>
-        Launch pCARS then go to Options - Visuals - Hardware and set Use Shared Memory to Yes.
+        Some games require extra steps to share data with DashPanelServer.<br>
+        <br><b>pCARS</b>
+        <br>Launch pCARS then go to Options-Visuals-Hardware and set Use Shared Memory to Yes.
+        <br><b>pCARS2</b>
+        <br>Launch pCARS2 then go to Options-System and set Shared Memory to Project CARS 1.
         <br>
         <br>
         <b>rFactor 1/2</b><br>
@@ -224,6 +225,26 @@
         <br>OutGauge IP 127.0.0.1
         <br>OutGauge Port 20777
         <br>OutGauge ID 0
+        <br>
+        <br><b>LFS UDP</b>
+        <br>On the client select LFS UDP from Connect Mode.
+        <br>Set your chosen port (default for LFS is 20777)
+        <br>Press the connect button.
+        <br>In the log it will say: 
+        <br>UDP Listener started:xxx.xxx.xxx.xxx (Your devices IP address)
+        <br>
+        <br>You can let that run and make note of the IP address.
+        <br>Open cfg.txt in the LFS folder.
+        <br>Scroll down the the OutGauge settings and set them up like this:
+        <br>OutGauge Mode 2
+        <br>OutGauge Delay 1
+        <br>OutGauge IP xxx.xxx.xxx.xxx (Device IP from above)
+        <br>OutGauge Port 20777 (Port you chose on device)
+        <br>OutGauge ID 0
+        <br>
+        <br>Start LFS and a race. It will only send data once you are in the car so click GO to enter.
+        <br>If successfull the client log will report:
+        <br>Receiving data from: xxx.xxx.xxx.xxx (Host computer IP address)
         <br>
         <br><b>BeamNG</b>
         <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
