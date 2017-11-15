@@ -169,10 +169,16 @@
         <b>Note:</b>
         <br>
         Some games require extra steps to share data with DashPanelServer.<br>
+        <br><b>Assetto Corsa UDP console</b>
+        <br>In the DashPanel main screen choose the Connection mode “AC UDP”.
+        <br>Set the IP Address to that of your console.
+        <br>Set the port, recommend anything free above 10000.
+        <br>Press the connect button.
+        <br>
         <br><b>pCARS</b>
         <br>Launch pCARS then go to Options-Visuals-Hardware and set Use Shared Memory to Yes.
         <br><b>pCARS2</b>
-        <br>Launch pCARS2 then go to Options-System and set Shared Memory to Project CARS 1.
+        <br>Launch pCARS2 then go to Options-System and set Shared Memory to Project CARS 1 or 2.
         <br>
         <br>
         <b>rFactor 1/2</b><br>
@@ -212,10 +218,22 @@
         <br>&lt;udp enabled="true" ip="127.0.0.1" port="20777" /&gt;
         <br>
         <br>Example F1 2017:
+        <br>Note: Sometimes it is required to restart F1 2017 for UDP changes to take effect.
+        <br>
+        <br>For PC:
         <br>Enter the options menu from the main menu, then enter the settings menu and select UDP Telemetry Settings.
         <br>Set UDP Telemetry to On.
         <br>IP Address to 127.0.0.1.
         <br>Port to the same as 'Proxy Port' setting on server. Default 20777.
+        <br>
+        <br>For Console:
+        <br>In the DashPanel main screen choose the Connection mode “F1 2017 UDP”.
+        <br>Set the port e.g. (20777) and press the connect button.
+        <br>The log window will say UDP listener started:XXX.XXX.XXX.XXX (Your devices IP address)
+        <br>In F1 2017 Enter the options menu from the main menu, then enter the settings menu and select UDP Telemetry Settings.
+        <br>Set UDP Telemetry to On.
+        <br>IP Address to XXX.XXX.XXX.XXX (Your devices IP address listed in the log)
+        <br>Port to the one you set on DashPanel e.g. (20777).
         <br>
         <br><b>LFS</b>
         <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
