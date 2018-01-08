@@ -75,7 +75,7 @@
 
             <h2 id="desc">Description</h2>
             <p>
-                <br>Turn your Android Tablet/Phone into a fully customizable dashboard display for your favourite racing sims.
+                <br>Create fully customizable dashboard displays for your favourite racing sims on your Android device or on PC using extra monitors or overlay mode on your main display.
                 <br>
                 <br>Single client for all supported games. Server automatically detects games and reads data with minimal configuration required.
                 <br>
@@ -93,7 +93,7 @@
                 <br>-Codemasters F1 2012, F1 2013, F1 2014, F1 2015, F1 2016, F1 2017 (PC/PS4/XB1) Dirt Rally, Dirt 4
                 <br>-Live For Speed
                 <br>-BeamNG
-                <br>- iRacing (Development temporarily on hold. Currently available as free Alpha)
+                <br>-iRacing
                 <br>
                 <br>
                 <br>New dashboards, widgets, and data readers coming in the future.
@@ -128,6 +128,15 @@
                         <li>
                             <img src="images/dashpanel/9.jpg" />
                         </li>
+                        <li>
+                            <img src="images/dashpanel/EnjoyExternal.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/dashpanel/9_RunSimOverlay.png" />
+                        </li>
+                        <li>
+                            <img src="images/dashpanel/OverlayWIP.png" />
+                        </li>
                         </ul>
                 </div><!-- FlexSlider -->
     <br /><br />
@@ -140,18 +149,19 @@
 
     <h2 id="dlds">Downloads</h2>
     <p>
-        Install the client DashPanel from the GooglePlay store:<br>
-        
-        <a href='https://play.google.com/store/apps/details?id=com.PyrofrogStudios.DashPanel' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="width:200px"/></a>
+        <b>Client:</b><br>
+        Install the client DashPanel from Steam or GooglePlay:<br>
+        <a href='http://store.steampowered.com/app/715670/DashPanel/' target="_blank"><img alt='Get it on Steam' src='images/SteamButton.jpg' style="width:200px"/></a>
+        <a href='https://play.google.com/store/apps/details?id=com.PyrofrogStudios.DashPanel' target="_blank"><img alt='Get it on Google Play' src='images/GooglePlayCrop.png' style="width:200px"/></a>
         <br><br>
         
+        <b>Server:</b><br>
         DashPanel Server requires the following to be installed on your system:<br> 
         <a href="https://www.microsoft.com/en-au/download/details.aspx?id=30653" target="_blank">.NET 4.5</a><br>
         <a href="https://www.microsoft.com/en-au/download/details.aspx?id=40784" target="_blank">Visual C++ Redistributable Packages for Visual Studio 2013 x86</a><br>
         <br>
-        Get the latest version of the server here:<br>
-        <a href="downloads/DashPanelServer.zip" class="buttonlink">DashPanelServer.zip</a>
-        <br><br><br><br>
+        The latest version of the server is distributed with the free <a href="http://store.steampowered.com/app/715670/DashPanel/" target="_blank">DashPanel</a> install via Steam. <br>
+        <br>
         <b>Older version:</b><br>
         Unity 5 now requires Android: OS 4.1 or later, to use the last version of DashPanel that supported Android 2.3.1 or later download the APK and compatible server below.<br>
         <a href="downloads/DashPanel_1.2.6.apk" class="buttonlink">DashPanel_1.2.6</a><br><br><br>
@@ -162,112 +172,7 @@
 
     <h2 id="inst">Instructions</h2>
     <p>
-        Run the server on your host Windows PC that is connected to the same WIFI network as your mobile device and then connect via your chosen port. The server will automatically detect any compatible games running and transmit data to your chosen dashboard.<br>
-        <br>
-        Ensure the server and your chosen port are not blocked by your firewall. The server will attempt to open the chosen port using UpnP however this is not possible on all routers. If your experience connection issues look for specific instructions for forwarding ports at <a href="http://portforward.com/" target="_blank">http://portforward.com/</a>.
-        <br><br>
-        <b>Note:</b>
-        <br>
-        Some games require extra steps to share data with DashPanelServer.<br>
-        <br><b>Assetto Corsa UDP console</b>
-        <br>In the DashPanel main screen choose the Connection mode “AC UDP”.
-        <br>Set the IP Address to that of your console.
-        <br>Set the port, recommend anything free above 10000.
-        <br>Press the connect button.
-        <br>
-        <br><b>pCARS</b>
-        <br>Launch pCARS then go to Options-Visuals-Hardware and set Use Shared Memory to Yes.
-        <br><b>pCARS2</b>
-        <br>Launch pCARS2 then go to Options-System and set Shared Memory to Project CARS 1 or 2.
-        <br>
-        <br>
-        <b>rFactor 1/2</b><br>
-        For rFactor based games go to the folder where you have extracted DashPanelServer and you will find the plugins folder: e.g. C:\Games\DashPanelServer\Plugins
-        <br><br>
-        These plugins need to be copied to the following locations:<br>
-        ●rFactor1:<br>
-        ⁪⁪&nbsp;&nbsp;&nbsp;&nbsp;\rFactor\Plugins\DashPanel_RF1.dll<br>
-        ●rFactor2:<br>
-        ⁪⁪&nbsp;&nbsp;&nbsp;&nbsp;\rFactor 2\Bin32\Plugins\DashPanel_RF2_32.dll<br>
-        ⁪⁪&nbsp;&nbsp;&nbsp;&nbsp;\rFactor 2\Bin64\Plugins\DashPanel_RF2_64.dll<br>
-        ●Stock Car Extreme:<br>
-        ⁪⁪&nbsp;&nbsp;&nbsp;&nbsp;\Stock Car Extreme\Plugins\DashPanel_RF1.dll<br>
-        ●Automobilista:<br>
-        ⁪⁪&nbsp;&nbsp;&nbsp;&nbsp;\Automobilista\Plugins\DashPanel_RF1.dll<br>
-        <br><b>GTR 1/2, GPL, Race 07</b>
-        <br>Open \UserData\[playername]\[playername].plr with text editor.
-        <br>Change: Write Shared Memory="0" to line: Write Shared Memory="1".
-        <br>If the line does not exist add it in. It may disappear after running the game however the setting will remain.
-        <br>
-        <br><b>Codemasters</b>
-        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
-        <br>Locate the file hardware_settings_config.xml located in the users Documents folder.
-        <br>Eg. \Documents\My Games\DiRT Rally\hardwaresettings\hardware_settings_config.xml
-        <br>Edit to send UDP data to the ip 127.0.0.1 with a port matching the servers Proxy Port.
-        <br>
-        <br>Example F1 2012:
-        <br>&lt;motion enabled="true" ip="127.0.0.1" port="20777" delay="1" extradata="2" /&gt;
-        <br>
-        <br>Example F1 2013:
-        <br>&lt;motion enabled="true" ip="127.0.0.1" port="20777" delay="1" extradata="3" /&gt;
-        <br>
-        <br>Example Dirt Rally, Dirt 4, 2014:
-        <br>&lt;udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" /&gt;
-        <br>
-        <br>Example F1 2015, 2016:
-        <br>&lt;udp enabled="true" ip="127.0.0.1" port="20777" /&gt;
-        <br>
-        <br>Example F1 2017:
-        <br>Note: Sometimes it is required to restart F1 2017 for UDP changes to take effect.
-        <br>
-        <br>For PC:
-        <br>Enter the options menu from the main menu, then enter the settings menu and select UDP Telemetry Settings.
-        <br>Set UDP Telemetry to On.
-        <br>IP Address to 127.0.0.1.
-        <br>Port to the same as 'Proxy Port' setting on server. Default 20777.
-        <br>
-        <br>For Console:
-        <br>In the DashPanel main screen choose the Connection mode “F1 2017 UDP”.
-        <br>Set the port e.g. (20777) and press the connect button.
-        <br>The log window will say UDP listener started:XXX.XXX.XXX.XXX (Your devices IP address)
-        <br>In F1 2017 Enter the options menu from the main menu, then enter the settings menu and select UDP Telemetry Settings.
-        <br>Set UDP Telemetry to On.
-        <br>IP Address to XXX.XXX.XXX.XXX (Your devices IP address listed in the log)
-        <br>Port to the one you set on DashPanel e.g. (20777).
-        <br>
-        <br><b>LFS</b>
-        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
-        <br>In the LFS install folder open cfg.txt and edit the OutGauge section to the following changing the port number as required:
-        <br>OutGauge Mode 2
-        <br>OutGauge Delay 1
-        <br>OutGauge IP 127.0.0.1
-        <br>OutGauge Port 20777
-        <br>OutGauge ID 0
-        <br>
-        <br><b>LFS UDP</b>
-        <br>On the client select LFS UDP from Connect Mode.
-        <br>Set your chosen port (default for LFS is 20777)
-        <br>Press the connect button.
-        <br>In the log it will say: 
-        <br>UDP Listener started:xxx.xxx.xxx.xxx (Your devices IP address)
-        <br>
-        <br>You can let that run and make note of the IP address.
-        <br>Open cfg.txt in the LFS folder.
-        <br>Scroll down the the OutGauge settings and set them up like this:
-        <br>OutGauge Mode 2
-        <br>OutGauge Delay 1
-        <br>OutGauge IP xxx.xxx.xxx.xxx (Device IP from above)
-        <br>OutGauge Port 20777 (Port you chose on device)
-        <br>OutGauge ID 0
-        <br>
-        <br>Start LFS and a race. It will only send data once you are in the car so click GO to enter.
-        <br>If successfull the client log will report:
-        <br>Receiving data from: xxx.xxx.xxx.xxx (Host computer IP address)
-        <br>
-        <br><b>BeamNG</b>
-        <br>On the server set the 'Proxy Port' setting to the port of your choice (Default 20777).
-        <br>Enable OutGauge support in Options -> Gameplay.
-        <br>Set IP to 127.0.0.1 and Port to match the Proxy Port.
+        See full guides for DashPanel setup and usage at <a href="http://steamcommunity.com/app/715670/guides/" target="_blank">Steam Guides</a>.
     </p>
     
     <h2 id="tech">Techinical Info</h2>
