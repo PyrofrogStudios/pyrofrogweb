@@ -6,6 +6,7 @@ $(window).load(function() {
     slideshowSpeed: 5000,
     animationSpeed: 600,
     touch: true,
-    controlNav: false
+    controlNav: false,
+    video: true
     });
 });
