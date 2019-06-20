@@ -2740,3 +2740,10 @@ body.is-mobile.landing #footer {
   position: absolute;
   top: 0;
   width: 100%; }
+
+/* check box and cross for tables */
+.fa-check {
+  color: green; }
+
+.fa-remove {
+  color: red; }
