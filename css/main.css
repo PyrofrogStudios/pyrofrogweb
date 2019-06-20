@@ -1878,61 +1878,61 @@ button,
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .spotlight:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.075); }
     .spotlight:nth-child(1):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(1):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.15); }
     .spotlight:nth-child(2):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(2):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(0, 0, 0, 0.225); }
     .spotlight:nth-child(3):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(3):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(4) {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.3); }
     .spotlight:nth-child(4):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(4):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(5) {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.375); }
     .spotlight:nth-child(5):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(5):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(6) {
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.45); }
     .spotlight:nth-child(6):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(6):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(7) {
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.525); }
     .spotlight:nth-child(7):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(7):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(8) {
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.6); }
     .spotlight:nth-child(8):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(8):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(9) {
-    background-color: rgba(0, 0, 0, 0.9); }
+    background-color: rgba(0, 0, 0, 0.675); }
     .spotlight:nth-child(9):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(9):hover .image {
       opacity: 0.5; }
   .spotlight:nth-child(10) {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.75); }
     .spotlight:nth-child(10):hover {
       background-color: rgba(0, 174, 255, 0.15); }
     .spotlight:nth-child(10):hover .image {
