@@ -278,3 +278,13 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+
+
+/* my stuff */
+.flex-container{
+  margin: auto;
+  max-height: 80%;
+  height: 80%;
+  width: 80%;
+  /* width: auto; */
+  }
